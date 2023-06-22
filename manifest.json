@@ -1,0 +1,16 @@
+{
+    "name": "MAJAR",
+    "short_name": "Short Name",
+    "start_url": "localhost/proyek_ambw",
+    "display": "standalone",
+    "theme_color": "#db6930",
+    "background_color": "#e6d3ca",
+    "icons": [
+      {
+        "src": "icon.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ]
+  }
+  
