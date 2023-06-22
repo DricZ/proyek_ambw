@@ -7,9 +7,6 @@
 <?php
   include "head-lp.php";
 ?>
-<head>
-<link rel="manifest" href="/manifest.json">
-</head>
 
 <body>
 
@@ -303,10 +300,11 @@
     </div>
     <div class="row">
       <div class="col">
-        <p class="text-white text-center">@grupmangan2023</p>
+        <p class="text-white text-center">@AMBW</p>
       </div>
     </div>
   </div>
+  <script src="./assets/js/script.js"></script>
 
   <?php 
   if (isset($_GET['stats'])) {
@@ -325,7 +323,7 @@
     crossorigin="anonymous"></script>
 
   <!-- jquery -->
-  <script src="jquery-3.6.4.min.js"></script>
+  <!-- <script src="jquery-3.6.4.min.js"></script> -->
 
   <!-- fontawesome -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
@@ -344,20 +342,7 @@
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.all.min.js"></script>
 
   <!-- js external -->
-  <script src="./assets/js/script.js"></script>
-
-
-  <script>
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/service-worker.js')
-          .then(function(registration) {
-            console.log('Service Worker registered with scope:', registration.scope);
-          })
-          .catch(function(error) {
-            console.log('Service Worker registration failed:', error);
-          });
-      }
-    </script>
+  
 
 </body>
 

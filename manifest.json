@@ -1,16 +1,41 @@
 {
-    "name": "MAJAR",
-    "short_name": "Short Name",
-    "start_url": "localhost/proyek_ambw",
-    "display": "standalone",
-    "theme_color": "#db6930",
-    "background_color": "#e6d3ca",
-    "icons": [
-      {
-        "src": "icon.png",
-        "sizes": "192x192",
-        "type": "image/png"
-      }
-    ]
-  }
+  "name": "Mari Belajar!",
+  "short_name": "MAJAR",
+  "start_url": "/majar/index.php",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#db6930",
+  "background_color": "#e6d3ca",
+  "description": "Audrico, Kezia, Christine, William, Justian.",
+  "dir": "ltr",
+  "lang": "en-US",
+  "icons": [
+    {
+      "src": "./assets/ic_launcher-48x48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/ic_launcher-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/ic_launcher-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/ic_launcher-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/ic_launcher-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
   
