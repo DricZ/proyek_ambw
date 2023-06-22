@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 22 Jun 2023 pada 13.03
--- Versi server: 10.4.22-MariaDB
--- Versi PHP: 8.1.2
+-- Waktu pembuatan: 14 Bulan Mei 2023 pada 02.02
+-- Versi server: 10.4.25-MariaDB
+-- Versi PHP: 8.1.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -49,7 +49,7 @@ CREATE TABLE `account` (
 INSERT INTO `account` (`nik`, `full_name`, `username`, `password`, `no_wa`, `gender`, `alamat`, `id_role`, `tanggal_pendaftaran`, `last_login`, `id_partner`, `last_login_ip`) VALUES
 ('1239090', 'Pak suryano', 'Pengajar Handal Hiya', 'iniPassword', '08192381', 'Laki-lak', 'Jl. Ahmad Yani', 2, '2020-01-09', '2023-05-13', 2, '1234'),
 ('36241123', 'Suriyatno suritne', 'Pencari Ilmu', 'uuuwwwwsss', '08192423', 'Laki-lak', 'Jl. Ahmad Yani', 4, '2020-01-09', '2023-05-13', 2, '1234'),
-('asdasd', 'Audrico', 'admin', 'admin', '24123123', 'Laki-lak', 'asdasdd', 1, '2023-05-14', '2023-05-31', NULL, NULL),
+('asdasd', 'Audrico', 'admin', 'admin', '24123123', 'Laki-lak', 'asdasdd', 1, '2023-05-14', '2023-05-14', NULL, NULL),
 ('asdsad', 'asdad', 'aasd', 'asd', 'asd', 'Perempua', 'asd', 3, '2023-05-14', NULL, NULL, NULL);
 
 -- --------------------------------------------------------

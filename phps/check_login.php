@@ -86,7 +86,7 @@ if ($responseJson->success == true) {
         // }
 
     } else {
-        header("Location: ../login?stats=0");
+        header("Location: ../login.php?stats=0");
     }
 } else {
     // tindakan yang diambil saat reCAPTCHA tidak valid
