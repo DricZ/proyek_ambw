@@ -50,6 +50,7 @@ if ($responseJson->success == true) {
 
         $_SESSION["id"] = $row["nik"];
         $_SESSION["full_name"] = $row["full_name"];
+        $_SESSION["id_role"] = $row["id_role"];
         $_SESSION["username"] = $_POST["username"];
         $client_ip = $_SERVER['REMOTE_ADDR'];
         $date = date('Y-m-d H:i:s');

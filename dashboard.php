@@ -4,6 +4,10 @@ require "phps/check_integrity.php";
 
 $_SESSION['page'] = "Dashboard";
 
+if($_SESSION['id_role'] == 2){
+    header("Location: ./guru_dashboard.php");
+}
+
 $totalSiswa = "SELECT COUNT(nik) FROM account WHERE id_role = 2";
 $totalSiswa = $conn->prepare($totalSiswa);
 $totalSiswa->execute();
