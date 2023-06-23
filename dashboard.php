@@ -4,21 +4,21 @@ require "phps/check_integrity.php";
 
 $_SESSION['page'] = "Dashboard";
 
-$totalSiswa = "SELECT COUNT(nik) FROM ACCOUNT WHERE ID_ROLE = 2";
+$totalSiswa = "SELECT COUNT(nik) FROM account WHERE id_role = 2";
 $totalSiswa = $conn->prepare($totalSiswa);
 $totalSiswa->execute();
 
 $totalSiswa = $totalSiswa->fetchColumn();
 // echo "Total Siswa: " . $totalSiswa;
 
-$totalMentor = "SELECT COUNT(nik) FROM ACCOUNT WHERE ID_ROLE = 3";
+$totalMentor = "SELECT COUNT(nik) FROM account WHERE id_role = 3";
 $totalMentor = $conn->prepare($totalMentor);
 $totalMentor->execute();
 
 $totalMentor = $totalMentor->fetchColumn();
 // echo "Total Mentor: " . $totalMentor;
 
-$totalKelas = "SELECT COUNT(id) FROM COURSE";
+$totalKelas = "SELECT COUNT(id) FROM course";
 $totalKelas = $conn->prepare($totalKelas);
 $totalKelas->execute();
 
@@ -66,20 +66,20 @@ $totalPendapatan = $totalPendapatan->fetchColumn();
                 </div>
 
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-sm-3">
                         <div class="card">
                             <div class="card-body">
                                 <div class="row">
-                                    <div class="col-sm-3">
+                                    <div class="col-md-3">
                                         <i class="fa-solid fa-user" style="height: 100%; color: white"></i>
                                     </div>
-                                    <div class="col-sm-2">
+                                    <div class="col-md-2">
                                         <i class="fa-regular fa-circle-up" style="color: green"></i>
                                         <p style="font-size:8px; color: green">1.2%</p>
                                     </div>
-                                    <div class="col-sm-7">
+                                    <div class="col-md-7">
                                         <center>
-                                            <p class="card-text m-0" style="font-weight:900; font-size: 28px; color: white"> <?php echo $totalSiswa ?></p>
+                                            <p class="card-text m-0" style="color: white"> <?php echo $totalSiswa ?></p>
                                             <p class="m-0" style="font-size: 14px; color: white">Siswa</p>
                                         </center>
                                     </div>
@@ -87,7 +87,7 @@ $totalPendapatan = $totalPendapatan->fetchColumn();
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-sm-3">
                         <div class="card">
                             <div class="card-body">
                                 <div class="row">
@@ -108,7 +108,7 @@ $totalPendapatan = $totalPendapatan->fetchColumn();
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-sm-3">
                         <div class="card">
                             <div class="card-body">
                                 <div class="row">
@@ -129,7 +129,7 @@ $totalPendapatan = $totalPendapatan->fetchColumn();
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-sm-3">
                         <div class="card">
                             <div class="card-body">
                                 <div class="row">

@@ -8,3 +8,7 @@
     font-family: 'Inter', sans-serif;
     color: white;
 }
+
+.fa-solid{
+    display: none!important;
+}

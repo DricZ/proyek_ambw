@@ -31,6 +31,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css" rel="stylesheet">
     </link>
     <link href="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js" rel="stylesheet ">
+    <link rel="stylesheet" href="./assets/css/dashboard.css">
     
     <script>
     // document.addEventListener("keydown", function(e) {
