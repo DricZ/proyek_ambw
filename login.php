@@ -68,15 +68,15 @@ session_start();
             </a>
                 
             </div>
-            <h3 style="margin-left:28%;margin-top:5%">HI, selamat datang di MAJAR!</h3>
+            <h3 class="welcome">HI, selamat datang di MAJAR!</h3>
             <div class="login">
                 <form method="post" action="phps/check_login.php">
-                <input type="text" name="username" placeholder="Username" required>
+                <input class="username" type="text" name="username" placeholder="Username" required>
                     <div class="form-group">
                         <div class="input-group-append">
-                            <input  type="password" id="password" name="password" class="form-control form-control-user"
-                            id="exampleInputPassword" placeholder="Password" style="border-top-right-radius: 0; border-bottom-right-radius: 0; border-right: 0; margin-right: 0; margin-left: 60px; width: 58%;" required>
-                            <span class="input-group-text" onclick="password_show_hide('show_eye', 'hide_eye', 'password');" style="border-top-left-radius: 0; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 0; border-left: 0; background-color: #e0dede; padding: 11px; margin-top: 20px; border: 1px solid #e0dede; height: 16px; width: 11px; padding-right: 20px">
+                            <input class="password"  type="password" id="password" name="password" class="form-control form-control-user"
+                            id="exampleInputPassword" placeholder="Password" required>
+                            <span class="input-group-text" onclick="password_show_hide('show_eye', 'hide_eye', 'password');" >
                                 <i class="fas fa-eye d-none" id="show_eye"></i>
                                 <i class="fas fa-eye-slash" id="hide_eye"></i>
                             </span>
