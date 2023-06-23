@@ -12,22 +12,24 @@ $_SESSION['page'] = "Pembayaran";
 
 <body>
     <style>
-        .text-white {
-            color: white;
-        }
+    .text-white {
+        color: white;
+    }
 
-        .test:hover {
-            background-color: red;
-        }
+    .test:hover {
+        background-color: red;
+    }
     </style>
-    <div class="container-fluid text-center p-0" >
+    <div class="container-fluid text-center p-0">
         <div class="row" style="min-height: 100vh;">
             <?php include './sidebar.php'; ?>
-            <div class="col-10 text-start p-5" style="background-color: #FFF4F4;">
+            <div class="col-sm-10 col-md-10 col-lg-10 text-start p-3 p-sm-5" style="background-color: #FFF4F4;">
                 <h2>Pembayaran</h2>
                 <p class="mb-4">Hi, <?php echo $_SESSION["full_name"]; ?></p>
                 <hr>
-                <table id="example" class="table table-striped" style="width:100%">
+
+                <div class="table-responsive">
+                    <table id="example" class="table">
                     <thead>
                         <th data-sortable="true">ID Pembayaran</th>
                         <th data-sortable="true">Nama Pembayar</th>
@@ -61,30 +63,38 @@ $_SESSION['page'] = "Pembayaran";
                             }
                         ?>
                     </tbody>
-                </table>
+                    </table>
+                </div>
+
             </div>
 
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script>
 
 
     <!-- JQUERY -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
     <!-- fontawesome -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+        integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- aos -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script>
-        AOS.init();
+    AOS.init();
 
-        $(document).ready(function() {
-            table = $('#example').DataTable();
-        });
+    $(document).ready(function() {
+        table = $('#example').DataTable();
+    });
     </script>
 
 
